@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Ticket</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Ticket buying section -->
+    <div class="ticket-container">
+        <h2>Museum Ticket</h2>
+        <div class="event-info">
+            Welcome to our Korean & Chinese fusion museum <br>
+            Price: $10 per ticket
+        </div>
+
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+
+        <select id="quantity">
+            <option value="1">1 Ticket</option>
+            <option value="2">2 Tickets</option>
+            <option value="3">3 Tickets</option>
+            <option value="4">4 Tickets</option>
+            <option value="5">5 Tickets</option>
+        </select>
+
+        <div class="total">Total: $<span id="totalPrice">10</span></div>
+
+        <button id="buyButton">Buy Ticket</button>
+    </div>
+
+    <!-- Modal (pop-up) -->
+    <div id="confirmationModal" class="modal">
+        <div class="modal-content">
+            <h3>✅ Purchase Details</h3>
+            <p id="confirmationMessage"></p>
+            <button onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
