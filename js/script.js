@@ -1,40 +1,53 @@
-const pricePerTicket = 10;
+document.addEventListener("DOMContentLoaded", function () {
 
-const quantitySelect = document.getElementById("quantity");
-const totalPrice = document.getElementById("totalPrice");
-const buyButton = document.getElementById("buyButton");
+    const pricePerTicket = 10;
 
-// Update total price based on ticket quantity selection
-quantitySelect.addEventListener("change", function() {
-    const quantity = quantitySelect.value;
-    totalPrice.textContent = quantity * pricePerTicket;
-});
+    const quantitySelect = document.getElementById("quantity");
+    const identitySelect = document.getElementById("identity");
+    const totalPrice = document.getElementById("totalPrice");
+    const buyButton = document.getElementById("buyButton");
 
-// Show modal with purchase details
-buyButton.addEventListener("click", function() {
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const quantity = quantitySelect.value;
-    const total = quantity * pricePerTicket;
+    function calculateTotal() {
+        const quantity = parseInt(quantitySelect.value);
+        const identity = identitySelect.value;
 
-    // Simple validation to ensure name and email are filled
-    if(name === "" || email === "") {
-        alert("Please fill in all fields.");
-        return;
+        let total = quantity * pricePerTicket;
+
+        if (identity === "yes") {
+            total += 5;
+        }
+
+        return total;
     }
 
-    // Show purchase details in the modal
-    const confirmationMessage = `
-        ${name}, you have successfully purchased ${quantity} ticket(s).<br>
-        Total Paid: $${total}`;
-    
-    document.getElementById("confirmationMessage").innerHTML = confirmationMessage;
+    function updateTotal() {
+        totalPrice.textContent = calculateTotal();
+    }
 
-    // Open the modal
-    document.getElementById("confirmationModal").style.display = "block";
+    quantitySelect.addEventListener("change", updateTotal);
+    identitySelect.addEventListener("change", updateTotal);
+
+    // Initialize total
+    updateTotal();
+
+    buyButton.addEventListener("click", function () {
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const quantity = quantitySelect.value;
+        const total = calculateTotal();
+
+        if (name === "" || email === "") {
+            alert("Please fill in all fields.");
+            return;
+        }
+
+        const confirmationMessage = `
+            ${name}, you have successfully purchased ${quantity} ticket(s).<br>
+            Total Paid: $${total}
+        `;
+
+        document.getElementById("confirmationMessage").innerHTML = confirmationMessage;
+        document.getElementById("confirmationModal").style.display = "block";
+    });
+
 });
-
-// Close the modal
-function closeModal() {
-    document.getElementById("confirmationModal").style.display = "none";
-}

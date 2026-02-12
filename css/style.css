@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #1e3c72, #2a5298);
+    background:#a3262a;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,7 +43,7 @@ input, select {
 button {
     width: 100%;
     padding: 12px;
-    background: #2a5298;
+    background: #a3262a;
     color: white;
     border: none;
     border-radius: 6px;
@@ -53,7 +53,7 @@ button {
 }
 
 button:hover {
-    background: #1e3c72;
+    background: #8c1a1d;
 }
 
 /* Modal */
