@@ -1,0 +1,560 @@
+/* BODY */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Spartan', sans-serif;
+}
+
+/* WRAPPERS */
+.outer_wrapper {
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 800vw;
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+}
+
+/* GALLERY NAME */
+.gallery_sign {
+  display: flex;
+  position: absolute;
+  right: 7vw;
+  padding: 5vh 1vw;
+}
+.gallery_sign img {
+  width: 18vw;
+}
+.arrow_sign {
+  font-size: 11vw;
+  animation: point 10s infinite;
+  margin: auto 4vw;
+}
+
+@keyframes point {
+  0%, 50%, 100% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+  25%, 75% {
+    -webkit-transform: translateX(90%);
+    transform: translateX(90%);
+  }
+}
+
+/* RECEPTION */
+.receptionist {
+  position: absolute;
+  bottom: 37.3vh;
+  left: 21.25vw;
+  height: 11vh;
+  width: 10vw;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 1.1vw;
+  line-height: 3vh;
+  color: white;
+  word-break: normal;
+}
+
+/* TICKETING BOARD */
+#ticket_board {
+  width: 38vw;
+  color: white;
+  padding: 3vh 1vw;
+}
+.board_section {
+  float: left;
+  padding: 0 1vw;
+  font-size: 0.9vw;
+}
+.board_section a {
+  color: white;
+}
+.board_section .row {
+  margin-bottom: 1vh;
+}
+.board_section a:hover {
+  color: #ff873f;
+}
+.board_header {
+  font-size: 1.8vw;
+  text-align: center;
+  padding-bottom: 3vh;
+}
+.board_subheader {
+  color: #ffa500;
+  min-height: 4vh;
+  font-size: 1.3vw;
+}
+
+/* GALLERY WALLS */
+.wall {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-size: 100vw 100vh;
+}
+.ticket_wall {
+  background-image: url("https://yejiweji.github.io/yejinoh/src/portfolio_website/ticket_booth_wall.png");
+}
+.plain_wall {
+  background-image: url("https://yejiweji.github.io/yejinoh/src/portfolio_website/plain_wall.png");
+}
+.right_wall {
+  background-image: url("https://yejiweji.github.io/yejinoh/src/portfolio_website/right_wall.png");
+}
+.left_wall {
+  background-image: url("https://yejiweji.github.io/yejinoh/src/portfolio_website/left_wall.png");
+}
+.mid_wall {
+  background-image: url("https://yejiweji.github.io/yejinoh/src/portfolio_website/mid_wall.png");
+}
+.door_wall {
+  background-image: url("https://yejiweji.github.io/yejinoh/src/portfolio_website/door_wall.png");
+}
+
+/* SECURITY POLES */
+.pole, .poles {
+  height: 30vh;
+  bottom: 26vh;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 1;
+}
+#poles_1 {
+  width: 80vw;
+  left: 58vw;
+}
+#poles_2 {
+  width: 90vw;
+  right: -40vw;
+}
+#poles_3 {
+  width: 75vw;
+  left: 26vw;
+}
+#poles_4 {
+  width: 94vw;
+  left: 0;
+}
+#pole_1 {
+  width: 28vw;
+  left: calc(30vw + 2vw);
+}
+#pole_2 {
+  width: 28vw;
+  right: calc(-10vw);
+}
+#pole_3 {
+  width: 28vw;
+  left: calc(30vw + 3vw);
+}
+
+/* PICTURE FRAMES */
+.frame {
+  position: absolute;
+  border: 9px solid #1e2a4e;
+  border-radius: 3%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  box-shadow: -0.7vw 0.7vw 0.7vw -0.3vw #616161;
+  -moz-box-shadow: -0.7vw 0.7vw 0.7vw -0.3vw #616161;
+  -webkit-box-shadow: -0.7vw 0.7vw 0.7vw -0.3vw #616161;
+  -o-box-shadow: -0.7vw 0.7vw 0.7vw -0.3vw #616161;
+}
+.frame:hover {
+  cursor: pointer;
+}
+.frame::after {
+  content: "View details";
+  position: absolute;
+  width: 6vw;
+  top: 2vh;
+  left: -8.3vw;
+  padding: 0.7vh 0.5vw;
+  border-radius: 1%;
+  background: white;
+  color: black;
+  font-size: 1vw;
+  text-align: center;
+  box-shadow: -0.5vw 0.4vw 0.5vw -0.3vw #616161;
+  -moz-box-shadow: -0.5vw 0.4vw 0.5vw -0.3vw #616161;
+  -webkit-box-shadow: -0.5vw 0.4vw 0.5vw -0.3vw #616161;
+  -o-box-shadow: -0.5vw 0.4vw 0.5vw -0.3vw #616161;
+}
+#frame_1 {
+  background-image: url("https://yejiweji.github.io/yejinoh/src/digital_art/swimmer.jpg");
+  height: 45vh;
+  width: 23vw;
+  top: 7.5vh;
+  left: 5vw;
+}
+#frame_1::after {
+  content: "Swimmer: view details";
+}
+#frame_2 {
+  background-image: url("https://yejiweji.github.io/yejinoh/src/surrealism/surreal_art.png");
+  height: 40vh;
+  width: 48vw;
+  top: 7.5vh;
+  left: 40.5vw;
+}
+#frame_2::after {
+  content: "A Midnight Picnic: view details";
+}
+#frame_3 {
+  background-image: url("https://yejiweji.github.io/yejinoh/src/painting/not_myself.png");
+  height: 30vh;
+  width: 45vw;
+  top: 9vh;
+  left: 1vw;
+}
+#frame_3::after {
+  content: "Not Myself: view details";
+}
+#frame_4 {
+  background-image: url("https://yejiweji.github.io/yejinoh/src/pottery/pot_front.png");
+  height: 45vh;
+  width: 22vw;
+  top: 10vh;
+  right: 2.5vw;
+  z-index: 1;
+}
+#frame_4::after {
+  content: "Sick Of Fruit: view details";
+  left: -9vw;
+}
+#frame_5 {
+  background-image: url("https://yejiweji.github.io/yejinoh/src/css_art/house.gif");
+  height: 40vh;
+  width: 22vw;
+  top: 7.5vh;
+  left: 33vw;
+}
+#frame_5::after {
+  content: "Toy House: view details";
+}
+#frame_6 {
+  background-image: url("https://yejiweji.github.io/yejinoh/src/animation/thumbnail.png");
+  top: 7.5vh;
+  right: 2vw;
+  height: 40vh;
+  width: 28vw;
+}
+#frame_6::after {
+  content: "For Clay: view details";
+}
+#frame_7 {
+  background-image: url("https://yejiweji.github.io/yejinoh/src/3d_modelling/preview_recording.gif");
+  height: 38vh;
+  width: 22vw;
+  top: 9vh;
+  left: 14vw;
+}
+#frame_7::after {
+  visibility: hidden;
+}
+#frame_8 {
+  background-image: url("https://yejiweji.github.io/yejinoh/src/3d_modelling/rendered_statue.png");
+  height: 23vh;
+  width: 9.5vw;
+  bottom: 45.5vh;
+  left: 45vw;
+  border: none;
+  box-shadow: none;
+}
+#frame_8::after {
+  content: 'Miraculous: view details';
+  left: 1.5vw;
+  top: 30vh;
+}
+#frame_9 {
+  background-image: url("https://yejiweji.github.io/yejinoh/src/3d_modelling/preview_recording.gif");
+  height: 38vh;
+  width: 22vw;
+  top: 9vh;
+  right: 15vw;
+}
+#frame_9::after {
+  visibility: hidden;
+}
+#frame_10 {
+  background-image: url("https://yejiweji.github.io/yejinoh/src/game_design/last_train_home_cover.png");
+  height: 37vh;
+  width: 17vw;
+  top: 8vh;
+  left: 8vw;
+}
+#frame_10::after {
+  content: "Last Train Home: view details";
+}
+#frame_11 {
+  background-image: url("https://yejiweji.github.io/yejinoh/src/react_app/food_planet_rendering.png");
+  height: 37vh;
+  width: 17vw;
+  top: 8vh;
+  left: 39vw;
+}
+#frame_11::after {
+  content: "Food Planet: view details";
+}
+#frame_12 {
+  background-image: url("https://yejiweji.github.io/yejinoh/src/portfolio_website/website_rendering.png");
+  height: 37vh;
+  width: 17vw;
+  top: 8vh;
+  left: 70vw;
+}
+#frame_12::after {
+  content: "The Exhibition: view details";
+}
+
+/* PODIUM */
+.podium {
+  height: 50vh;
+  width: 20vw;
+  position: absolute;
+  bottom: -1vh;
+  left: 37vw;
+}
+
+/* LIGHTS */
+.lights {
+  height: 10vh;
+  width: 25vw;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
+.lights img {
+  width: 100%;
+}
+.lights:before {
+  content: "";
+  height: 5vh;
+  width: 18vw;
+  background: #fef0c8;
+  opacity: 0.3;
+  border-radius: 70%;
+  display: block;
+  position: inherit;
+  top: 40px;
+  right: 2.5vw;
+  -webkit-box-shadow: 0 0 15px 15px #fef0c8;
+  -moz-box-shadow: 0 0 15px 15px #fef0c8;
+  box-shadow: 0 0 15px 15px #fef0c8;
+  animation: glow 1.4s linear infinite alternate;
+}
+@keyframes glow {
+  to {
+    -webkit-box-shadow: 0 0 60px 60px #fef0c8;
+    -moz-box-shadow: 0 0 60px 60px #fef0c8;
+    box-shadow: 0 0 60px 60px #fef0c8;
+  }
+}
+#lights_1 { left: calc(5vw + 0vw); }
+#lights_2 { left: calc(40vw + 45vw / 4); }
+#lights_3 { left: 0; }
+#lights_4 { left: 23vw; }
+#lights_5 { right: 1.5vw; }
+#lights_6 { left: calc(32vw + 0.5vw); }
+#lights_7 { right: calc(2vw + 2vw); }
+#lights_8 { left: calc(14vw + 0vw); }
+#lights_9 { left: calc(45vw - 7.5vw); }
+#lights_10 { right: calc(15vw - 1vw); }
+#lights_11 { left: 5vw; }
+#lights_12 { left: 36vw; }
+#lights_13 { left: 67vw; }
+#lights_14 { left: 35vw; }
+#lights_15 { right: -10vw; }
+#lights_16 { left: calc(30vw + 6vw); }
+
+/* POST-EXHIBITION */
+/* .letter_of_intent_section, .cv_section, .reference_letters_section {
+  position: absolute;
+  top: 10vh;
+  margin: 3vh 1vw;
+  display: flex;
+}
+.letter_of_intent_section {
+  left: 30vw;
+}
+.author_logo {
+  width: 10vw;
+  margin: auto;
+  margin-left: 2vw;
+}
+.wall_panel {
+  max-width: 7.5vw;
+  font-size: 1vw;
+  background: #a5aac1;
+  text-align: center;
+  padding: 3vh 1.5vw 0 1.5vw;
+  -moz-box-shadow: -0.7vw 0.7vw 0.7vw -0.3vw #616161;
+  -o-box-shadow: -0.7vw 0.7vw 0.7vw -0.3vw #616161;
+}
+.panel_title {
+  border-bottom: 1px solid #5a5a5a;
+  padding-bottom: 1.5vh;
+  font-weight: bolder;
+}
+.panel_description {
+  font-size: 0.8vw;
+  padding-top: 1.5vh;
+}
+.letter_of_intent_screenshot,
+.cv_screenshot,
+.reference_letter_screenshot {
+  width: 10vw;
+  height: 24vh;
+  margin-left: 2vw;
+  opacity: 0.6;
+  box-shadow: -0.5vw 0.5vw 0.4vw -0.3vw #616161;
+  -moz-box-shadow: -0.5vw 0.5vw 0.4vw -0.3vw #616161;
+  -webkit-box-shadow: -0.5vw 0.5vw 0.4vw -0.3vw #616161;
+  -o-box-shadow: -0.5vw 0.5vw 0.4vw -0.3vw #616161;
+}
+.letter_of_intent_screenshot:hover,
+.cv_screenshot:hover,
+.reference_letter_screenshot:hover {
+  opacity: 1;
+}
+.cv_section {
+  right: -10vw;
+  z-index: 5;
+}
+.reference_letters_section {
+  display: flex;
+  left: 30vw;
+}
+.reference_letter {
+  text-align: center;
+}
+.reference_letter_header {
+  margin-left: 2vw;
+  font-size: 0.8vw;
+} */
+
+/* EXIT DOOR */
+.door {
+  width: 14vw;
+  height: 50vh;
+  position: absolute;
+  right: 3vw;
+  bottom: 35vh;
+}
+.door_sign {
+  text-transform: uppercase;
+  color: red;
+  font-size: 2.5vw;
+  text-align: center;
+}
+.exit_sign {
+  font-weight: bolder;
+}
+.door:hover .exit_sign {
+  display: none;
+}
+.thank_you_sign {
+  color: white;
+  font-size: 1.5vw;
+  display: none;
+}
+.door:hover .thank_you_sign {
+  display: unset;
+}
+
+
+/* RESPONSIVE - SMALL SCREENS */
+@media only screen and (max-width: 600px) {
+  .gallery_sign img {
+    width: 24vw;
+  }
+
+  .frame {
+    border-width: 5px;
+  }
+  .frame::after {
+    left: -9.5vw;
+  }
+  #frame_1 {
+    height: 22vh;
+  }
+  #frame_2 {
+    height: 17vh;
+  }
+  #frame_3 {
+    height: 15vh;
+  }
+  #frame_4 {
+    height: 25vh;
+    width: 29vw;
+    right: -3.5vw;
+  }
+  #frame_5 {
+    height: 17vh;
+  }
+  #frame_6 {
+    height: 17vh;
+  }
+  #frame_7 {
+    height: 18vh;
+  }
+  #frame_8 {
+    width: 19.5vw;
+    left: 40vw;
+  }
+  #frame_8::after {
+    left: 6.5vw;
+    top: 29vh;
+  }
+  .podium {
+    width: 45vw;
+    left: 21vw;
+  }
+  #frame_9 {
+    height: 18vh;
+  }
+  #frame_10 {
+    height: 19vh;
+  }
+  #frame_11 {
+    height: 19vh;
+  }
+  #frame_12 {
+    height: 19vh;
+  }
+
+  .pole {
+    height: 28vh;
+  }
+  .poles {
+    height: 26vh;
+  }
+  #pole_1,
+  #pole_3 {
+    width: 37vw;
+  }
+  #pole_2 {
+    width: 37vw;
+    right: calc(-18vw);
+  }
+
+  .door {
+    height: 45vh;
+  }
+}
