@@ -144,8 +144,8 @@ body {
   right: -40vw;
 }
 #poles_3 {
-  width: 75vw;
-  left: 26vw;
+  width: 70vw;
+  left: 15vw;
 }
 #poles_4 {
   width: 94vw;
@@ -560,50 +560,116 @@ body {
 } */
 
 /* MANNEQUINS */
-#hanbok_mannequin {
-  position: absolute;
-  width: auto;
-  height: 100vh;   
-  bottom: 89px;  
-  left: 160px;      
-}
 
 #qipao_mannequin{
   position: absolute;
   width: auto;
   height: 70vh;       
-  bottom: 205px;  
-  left: -200px;       
+  bottom: 250px;  
+  left: -135px;       
+}
+
+#hanbok_mannequin {
+  position: absolute;
+  width: auto;
+  height: 100vh;   
+  bottom: 89px;  
+  left: 590px;      
 }
 
 #frame_square{
   position: absolute;
   width: auto;
   height: 70vh;       
-  bottom: 260px;  
-  left: -150px;       
+  bottom: 300px;  
+  left: -50px;       
 }
 
 #frame_circle{
   position: absolute;
   width: auto;
-  height: 53vh;       
+  height: 60vh;       
   bottom: 340px;  
-  left: 587px;       
+  left: 1210px;       
 }
 
 #korean_door{
   position: absolute;
   width: auto;
   height: 80vh;       
-  bottom: 225px;  
-  left: -150px;       
+  bottom: 255px;  
+  left: 105px;  
+  /* display: none;      */
 }
 
 #korean_door_open{
   position: absolute;
   width: auto;
   height: 80vh;       
-  bottom: 225px;  
-  left: -150px;       
+  bottom: 255px;  
+  left: 105px;     
+  /* display: none;   */
+}
+
+#korean_store{
+  position: absolute;
+  width: auto;
+  height: 80vh;       
+  bottom: 307px;  
+  left: 95px; 
+  display:none;
+}
+
+
+#frame_square2{
+  position: absolute;
+  width: auto;
+  height: 50vh;       
+  bottom: 380px;  
+  left: 180px;       
+}
+
+#frame_circle2{
+  position: absolute;
+  width: auto;
+  height: 60vh;       
+  bottom: 340px;  
+  left: 540px;       
+}
+
+#frame_square3{
+  position: absolute;
+  width: auto;
+  height: 50vh;       
+  bottom: 380px;  
+  left: 1040px;       
+}
+
+#mannequin{
+  position: absolute;
+  width: auto;
+  height: 124vh;       
+  bottom: -120px;  
+  left: -820px;       
+}
+
+#mannequin_sit{
+  position: absolute;
+  width: auto;
+  height: 104vh;       
+  bottom: -35px;  
+  left: -420px;       
+}
+
+#pole31{
+   width: 28vw;
+  left: calc(30vw + 3vw);
+}
+
+#frame_square4{
+  position: absolute;
+  width: auto;
+  height: 75vh;       
+  bottom: 289px;  
+  left: 380px;       
 }
