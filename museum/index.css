@@ -71,12 +71,20 @@ body {
 } */
 
 /* TICKETING BOARD */
-/* #ticket_board {
+#ticket_board {
   width: 38vw;
-  color: white;
+  color: rgb(222, 214, 249);
   padding: 3vh 1vw;
+  position: absolute;       /* allows you to place it anywhere over the wall */
+  font-family: 'Spartan', sans-serif; /* font style */
+  font-size: 2vw;         /* font size (responsive to viewport width) */
+  text-align: left;      
+  padding: 5px 10px;        /* space around the text */
+  bottom: 800px;
+  top: 45px;
 }
-.board_section {
+
+/* .board_section {
   float: left;
   padding: 0 1vw;
   font-size: 0.9vw;
@@ -563,11 +571,11 @@ body {
 
 .title_mannequin_text{
   position: absolute;       /* allows you to place it anywhere over the wall */
-  color: rgb(47, 41, 100);             /* text color */
+  color: rgb(243, 146, 98);             /* text color */
   font-family: 'Spartan', sans-serif; /* font style */
   font-size: 1.2vw;         /* font size (responsive to viewport width) */
   text-align: center;       /* center-align text */
-  background: rgba(255, 239, 63, 0.5); /* semi-transparent background */
+  background: rgba(14, 9, 53, 0.919); /* semi-transparent background */
   padding: 5px 10px;        /* space around the text */
   border-radius: 5px;       /* rounded corners */
   bottom: 800px;
@@ -576,14 +584,14 @@ body {
 
 .sale_mannequin_text{
   position: absolute;       /* allows you to place it anywhere over the wall */
-  color: rgb(47, 41, 100);             /* text color */
+  color: rgb(243, 146, 98);             /* text color */
   font-family: 'Spartan', sans-serif; /* font style */
   font-size: 1.2vw;         /* font size (responsive to viewport width) */
   text-align: center;       /* center-align text */
-  background: rgba(255, 239, 63, 0.5); /* semi-transparent background */
+  background: rgba(14, 9, 53, 0.919); /* semi-transparent background */
   padding: 5px 10px;        /* space around the text */
   border-radius: 5px;       /* rounded corners */
-  bottom: 653px;
+  bottom: 650px;
   left: -500px;
 }
 
