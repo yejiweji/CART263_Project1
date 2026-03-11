@@ -1,11 +1,11 @@
 /* Container for the booth image */
 .booth-wrapper {
     background-image: url('../assets/image/ticketbooth.png');
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    width: 900px; /* Adjust based on your image aspect ratio */
-    height: 600px;
+    width: 178vh; /* Adjust based on your image aspect ratio */
+    height: 98vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,11 +14,11 @@
 
 /* Adjust the existing container to fit the booth "screen" */
 .ticket-container {
-    background: white;
+    background: rgba(16, 13, 41, 0.045);
     padding: 20px;
     border-radius: 4px; /* Squarer corners to match the screen */
     width: 480px;      /* Adjust width to fit the black screen area */
-    height: 280px;     /* Adjust height to fit the black screen area */
+    height: 400px;     /* Adjust height to fit the black screen area */
     box-shadow: none;  /* Remove shadow so it looks like it's inside the screen */
     overflow-y: auto;  /* Allows scrolling if content is too long for the screen */
     
@@ -28,13 +28,14 @@
 
 h2 {
     text-align: center;
+    color:#ffffff;
     margin-bottom: 10px;
 }
 
 .event-info {
     text-align: center;
     margin-bottom: 20px;
-    color: #555;
+    color: #ffffff;
 }
 
 input, select {
@@ -48,12 +49,13 @@ input, select {
 .total {
     font-weight: bold;
     margin: 10px 0;
+    color:#df0a0a;
 }
 
 button {
     width: 100%;
     padding: 12px;
-    background: #a3262a;
+    background: #bc191e;
     color: white;
     border: none;
     border-radius: 6px;
@@ -84,4 +86,8 @@ button:hover {
     width: 300px;
     margin: 15% auto;
     text-align: center;
+}
+
+label {
+    color: white;
 }
