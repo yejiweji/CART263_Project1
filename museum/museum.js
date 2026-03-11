@@ -13,3 +13,4 @@
 //   doorOpen.style.display = 'none';
 //   doorClosed.style.display = 'block';
 // });
+

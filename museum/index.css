@@ -84,6 +84,13 @@ body {
   top: 45px;
 }
 
+#arrow_text {
+  font-size: 20px;
+  color: rgb(222, 214, 249);
+  font-weight:500;
+  text-align: right;
+}
+
 /* .board_section {
   float: left;
   padding: 0 1vw;
@@ -633,7 +640,7 @@ body {
   height: 80vh;       
   bottom: 255px;  
   left: 105px;  
-  /* display: none;      */
+  display: none;     
 }
 
 #korean_door_open{
@@ -642,7 +649,7 @@ body {
   height: 80vh;       
   bottom: 255px;  
   left: 105px;     
-  /* display: none;   */
+  display: none;  
 }
 
 #korean_store{
@@ -702,3 +709,4 @@ body {
   bottom: 289px;  
   left: 380px;       
 }
+
