@@ -576,4 +576,34 @@ body {
   left: -200px;       
 }
 
+#frame_square{
+  position: absolute;
+  width: auto;
+  height: 70vh;       
+  bottom: 260px;  
+  left: -150px;       
+}
 
+#frame_circle{
+  position: absolute;
+  width: auto;
+  height: 53vh;       
+  bottom: 340px;  
+  left: 587px;       
+}
+
+#korean_door{
+  position: absolute;
+  width: auto;
+  height: 80vh;       
+  bottom: 225px;  
+  left: -150px;       
+}
+
+#korean_door_open{
+  position: absolute;
+  width: auto;
+  height: 80vh;       
+  bottom: 225px;  
+  left: -150px;       
+}
