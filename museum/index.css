@@ -561,6 +561,32 @@ body {
 
 /* MANNEQUINS */
 
+.title_mannequin_text{
+  position: absolute;       /* allows you to place it anywhere over the wall */
+  color: rgb(47, 41, 100);             /* text color */
+  font-family: 'Spartan', sans-serif; /* font style */
+  font-size: 1.2vw;         /* font size (responsive to viewport width) */
+  text-align: center;       /* center-align text */
+  background: rgba(255, 239, 63, 0.5); /* semi-transparent background */
+  padding: 5px 10px;        /* space around the text */
+  border-radius: 5px;       /* rounded corners */
+  bottom: 800px;
+  left: -440px;
+}
+
+.sale_mannequin_text{
+  position: absolute;       /* allows you to place it anywhere over the wall */
+  color: rgb(47, 41, 100);             /* text color */
+  font-family: 'Spartan', sans-serif; /* font style */
+  font-size: 1.2vw;         /* font size (responsive to viewport width) */
+  text-align: center;       /* center-align text */
+  background: rgba(255, 239, 63, 0.5); /* semi-transparent background */
+  padding: 5px 10px;        /* space around the text */
+  border-radius: 5px;       /* rounded corners */
+  bottom: 653px;
+  left: -500px;
+}
+
 #qipao_mannequin{
   position: absolute;
   width: auto;
@@ -617,7 +643,7 @@ body {
   height: 80vh;       
   bottom: 307px;  
   left: 95px; 
-  display:none;
+  display:none; /*turn off*/
 }
 
 
@@ -659,11 +685,6 @@ body {
   height: 104vh;       
   bottom: -35px;  
   left: -420px;       
-}
-
-#pole31{
-   width: 28vw;
-  left: calc(30vw + 3vw);
 }
 
 #frame_square4{
