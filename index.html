@@ -9,42 +9,52 @@
 <body>
 
     <!-- Ticket buying section -->
-    <div class="ticket-container">
-        <h2>Museum Ticket</h2>
-        <div class="event-info">
-            Welcome to our Korean & Chinese fusion museum <br>
-            Price: $10 per ticket
-        </div>
+     <div class="booth-wrapper">
+        <div class="ticket-container">
+            <h2>Museum Ticket</h2>
+            <div class="event-info">
+                Welcome to our Korean & Chinese fusion museum <br>
+                Price: $10 per ticket
+            </div>
 
-        <input type="text" id="name" placeholder="Your Name" required>
-        <input type="email" id="email" placeholder="Your Email" required>
-       <label for="identity">Are you a person of colour?</label>
-            <select id="identity">
-                <option value="no">No</option>
-                <option value="yes">Yes</option>
-            
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+        <label for="identity">Are you a person of colour?</label>
+                <select id="identity">
+                    <option value="no">No</option>
+                    <option value="yes">Yes</option>
+                
+                </select>
+            <select id="quantity">
+                <option value="1">1 Ticket</option>
+                <option value="2">2 Tickets</option>
+                <option value="3">3 Tickets</option>
+                <option value="4">4 Tickets</option>
+                <option value="5">5 Tickets</option>
             </select>
-        <select id="quantity">
-            <option value="1">1 Ticket</option>
-            <option value="2">2 Tickets</option>
-            <option value="3">3 Tickets</option>
-            <option value="4">4 Tickets</option>
-            <option value="5">5 Tickets</option>
-        </select>
 
-        <div class="total">Total: $<span id="totalPrice">10</span></div>
+            <div class="total">Total: $<span id="totalPrice">10</span></div>
 
-        <button id="buyButton">Buy Ticket</button>
-    </div>
-
-    <!-- Modal (pop-up) -->
-    <div id="confirmationModal" class="modal">
-        <div class="modal-content">
-            <h3>✅ Purchase Details</h3>
-            <p id="confirmationMessage"></p>
-            <button onclick="closeModal()">Close</button>
+            <button id="buyButton">Buy Ticket</button>
         </div>
     </div>
+
+    <div id="confirmationModal" class="modal">
+    <div class="modal-content">
+        <h3>✅ Purchase Details</h3>
+        <p id="confirmationMessage"></p>
+        
+        <div id="ticketDisplay" style="margin: 20px 0;">
+            <img src="assets/ticket.png" alt="Museum Ticket" style="width: 200px;">
+        </div>
+
+        <button id="enterMuseumButton" style="background: #28a745; margin-bottom: 10px;">
+            Welcome to our Museum
+        </button>
+        
+        <button onclick="closeModal()">Close</button>
+    </div>
+</div>
 
     <script src="js/script.js"></script>
 </body>

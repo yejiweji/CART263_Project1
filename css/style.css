@@ -1,19 +1,29 @@
-body {
-    font-family: Arial, sans-serif;
-    background:#a3262a;
+/* Container for the booth image */
+.booth-wrapper {
+    background-image: url('../assets/ticketbooth.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 900px; /* Adjust based on your image aspect ratio */
+    height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
+    position: relative;
 }
 
+/* Adjust the existing container to fit the booth "screen" */
 .ticket-container {
     background: white;
-    padding: 30px;
-    border-radius: 12px;
-    width: 350px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    padding: 20px;
+    border-radius: 4px; /* Squarer corners to match the screen */
+    width: 480px;      /* Adjust width to fit the black screen area */
+    height: 280px;     /* Adjust height to fit the black screen area */
+    box-shadow: none;  /* Remove shadow so it looks like it's inside the screen */
+    overflow-y: auto;  /* Allows scrolling if content is too long for the screen */
+    
+    /* Center it slightly higher to align with the booth screen */
+    margin-top: -80px; 
 }
 
 h2 {

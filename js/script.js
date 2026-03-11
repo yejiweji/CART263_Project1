@@ -50,4 +50,21 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("confirmationModal").style.display = "block";
     });
 
+    // Add this inside the buyButton.addEventListener("click", function () { ... }) block
+    // after the confirmationMessage is set:
+
+    const enterButton = document.getElementById("enterMuseumButton");
+
+    enterButton.addEventListener("click", function() {
+        // Redirects to the museum gallery file
+        window.location.href = "base html + css/index.html";
+    });
+
+    // Ensure the modal shows up
+    document.getElementById("confirmationModal").style.display = "block";
+
+    function closeModal() {
+    document.getElementById("confirmationModal").style.display = "none";
+}
+
 });
