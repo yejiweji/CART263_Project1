@@ -15,7 +15,7 @@ body {
   overflow-x: hidden;
   position: absolute;
   scrollbar-width: none;
-  -ms-overflow-style: none;
+  -ms-overflow-style:auto;
 }
 ::-webkit-scrollbar {
   display: none;
@@ -23,7 +23,7 @@ body {
 .wrapper {
   display: flex;
   flex-direction: row;
-  width: 800vw;
+  width: 600vw;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
 }
@@ -582,10 +582,10 @@ body {
   font-family: 'Spartan', sans-serif; /* font style */
   font-size: 1.2vw;         /* font size (responsive to viewport width) */
   text-align: center;       /* center-align text */
-  background: rgba(14, 9, 53, 0.919); /* semi-transparent background */
+  background: rgba(204, 2, 2, 0.674); /* semi-transparent background */
   padding: 5px 10px;        /* space around the text */
   border-radius: 5px;       /* rounded corners */
-  bottom: 800px;
+  bottom: 700px;
   left: -440px;
 }
 
@@ -595,11 +595,11 @@ body {
   font-family: 'Spartan', sans-serif; /* font style */
   font-size: 1.2vw;         /* font size (responsive to viewport width) */
   text-align: center;       /* center-align text */
-  background: rgba(14, 9, 53, 0.919); /* semi-transparent background */
+  background: rgba(204, 2, 2, 0.674); /* semi-transparent background */
   padding: 5px 10px;        /* space around the text */
   border-radius: 5px;       /* rounded corners */
-  bottom: 650px;
-  left: -500px;
+  bottom: 700px;
+  left: 560px;
 }
 
 #qipao_mannequin{
@@ -640,7 +640,7 @@ body {
   height: 80vh;       
   bottom: 255px;  
   left: 105px;  
-  display: none;     
+  /* display: none;      */
 }
 
 #korean_door_open{
@@ -649,7 +649,7 @@ body {
   height: 80vh;       
   bottom: 255px;  
   left: 105px;     
-  display: none;  
+  /* display: none;   */
 }
 
 #korean_store{
