@@ -558,3 +558,18 @@ body {
     height: 45vh;
   }
 }
+
+/* MANNEQUINS */
+.mannequin {
+  position: absolute;
+  height: 10vh; /* Scale to fit the gallery height */
+  bottom: 26vh; /* Matches the bottom of the poles for proper floor alignment */
+  z-index: 0;   /* Sits behind the poles (which are z-index: 1) */
+  pointer-events: none; /* User can click through it to the wall */
+}
+
+#mannequin_hanbok {
+  left: 50vw; /* Adjust this value to slide it left/right behind poles_2 */
+  width: auto;
+}
+

@@ -1,6 +1,6 @@
 /* Container for the booth image */
 .booth-wrapper {
-    background-image: url('../assets/ticketbooth.png');
+    background-image: url('../assets/image/ticketbooth.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
