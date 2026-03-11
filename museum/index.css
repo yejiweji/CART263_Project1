@@ -29,7 +29,7 @@ body {
 }
 
 /* GALLERY NAME */
-.gallery_sign {
+/* .gallery_sign {
   display: flex;
   position: absolute;
   right: 7vw;
@@ -53,10 +53,10 @@ body {
     -webkit-transform: translateX(90%);
     transform: translateX(90%);
   }
-}
+} */
 
 /* RECEPTION */
-.receptionist {
+/* .receptionist {
   position: absolute;
   bottom: 37.3vh;
   left: 21.25vw;
@@ -68,10 +68,10 @@ body {
   line-height: 3vh;
   color: white;
   word-break: normal;
-}
+} */
 
 /* TICKETING BOARD */
-#ticket_board {
+/* #ticket_board {
   width: 38vw;
   color: white;
   padding: 3vh 1vw;
@@ -99,7 +99,7 @@ body {
   color: #ffa500;
   min-height: 4vh;
   font-size: 1.3vw;
-}
+} */
 
 /* GALLERY WALLS */
 .wall {
@@ -165,7 +165,7 @@ body {
 }
 
 /* PICTURE FRAMES */
-.frame {
+/* .frame {
   position: absolute;
   border: 9px solid #1e2a4e;
   border-radius: 3%;
@@ -321,7 +321,7 @@ body {
 }
 #frame_12::after {
   content: "The Exhibition: view details";
-}
+} */
 
 /* PODIUM */
 .podium {
@@ -459,7 +459,7 @@ body {
 }
 .door_sign {
   text-transform: uppercase;
-  color: red;
+  color: rgb(255, 0, 0);
   font-size: 2.5vw;
   text-align: center;
 }
@@ -480,7 +480,7 @@ body {
 
 
 /* RESPONSIVE - SMALL SCREENS */
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   .gallery_sign img {
     width: 24vw;
   }
@@ -557,19 +557,23 @@ body {
   .door {
     height: 45vh;
   }
-}
+} */
 
 /* MANNEQUINS */
-.mannequin {
+#hanbok_mannequin {
   position: absolute;
-  height: 10vh; /* Scale to fit the gallery height */
-  bottom: 26vh; /* Matches the bottom of the poles for proper floor alignment */
-  z-index: 0;   /* Sits behind the poles (which are z-index: 1) */
-  pointer-events: none; /* User can click through it to the wall */
+  width: auto;
+  height: 100vh;   
+  bottom: 89px;  
+  left: 160px;      
 }
 
-#mannequin_hanbok {
-  left: 50vw; /* Adjust this value to slide it left/right behind poles_2 */
+#qipao_mannequin{
+  position: absolute;
   width: auto;
+  height: 70vh;       
+  bottom: 205px;  
+  left: -200px;       
 }
+
 
