@@ -716,6 +716,15 @@ body {
   left: 180px;       
 }
 
+/* NANCY'S WALL PIC (delete this)!!!!! */
+#square2_frame_image{
+  position: absolute;
+  width: auto;
+  height: 37vh;       
+  bottom: 425px;  
+  left: 200px; 
+}
+
 #frame_circle2{
   position: absolute;
   width: auto;
@@ -732,12 +741,22 @@ body {
   bottom: 425px;  
   left: 820px; 
 }
+
 #frame_square3{
   position: absolute;
   width: auto;
   height: 50vh;       
   bottom: 380px;  
   left: 1040px;       
+}
+
+/* NANCY'S WALL PIC (delete this)!!!!! */
+#square3_frame_image{
+  position: absolute;
+  width: auto;
+  height: 37vh;       
+  bottom: 425px;  
+  left: 1200px; 
 }
 
 #mannequin{
@@ -762,5 +781,14 @@ body {
   height: 75vh;       
   bottom: 289px;  
   left: 380px;       
+}
+
+/* NANCY'S WALL PIC (delete this)!!!!! */
+#square4_frame_image{
+  position: absolute;
+  width: auto;
+  height: 37vh;       
+  bottom: 425px;  
+  left: 500px; 
 }
 
