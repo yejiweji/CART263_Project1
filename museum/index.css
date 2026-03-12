@@ -669,7 +669,7 @@ body {
   width: auto;
   height: 60vh;       
   bottom: 340px;  
-  left: 1210px; 
+  left: 1150px; 
 }
 /* add blur psy image*/
 #circle_frame_image{
@@ -677,7 +677,7 @@ body {
   width: auto;
   height: 37vh;       
   bottom: 425px;  
-  left: 1491px; 
+  left: 1430px; 
 }
 
 /* Container to keep both doors in the same spot */
@@ -721,7 +721,7 @@ body {
   width: auto;
   height: 80vh;       
   bottom: 255px;  
-  left: 105px;  
+  left: 50px;  
   /* display: none;      */
 }
 
@@ -730,7 +730,7 @@ body {
   width: auto;
   height: 80vh;       
   bottom: 255px;  
-  left: 105px;     
+  left: 50px;     
   /* display: none;   */
 }
 
@@ -743,6 +743,24 @@ body {
   display:none; /*turn off*/
 }
 
+#chinese_door{
+  position: absolute;
+  width: auto;
+  height: 80vh;       
+  bottom: 220px;  
+  left: 870px;  
+  /* display: none;      */
+}
+
+#chinese_door_open{
+  position: absolute;
+  width: auto;
+  height: 80vh;       
+  bottom: 220px;  
+  left: 870px;     
+  /* display: none;   */
+}
+
 
 #frame_square2{
   position: absolute;
@@ -752,13 +770,12 @@ body {
   left: 180px;       
 }
 
-/* NANCY'S WALL PIC (delete this)!!!!! */
 #square2_frame_image{
   position: absolute;
   width: auto;
-  height: 37vh;       
-  bottom: 425px;  
-  left: 200px; 
+  height: 30vh;       
+  bottom: 500px;  
+  left: 375px; 
 }
 
 #frame_circle2{
@@ -786,13 +803,12 @@ body {
   left: 1040px;       
 }
 
-/* NANCY'S WALL PIC (delete this)!!!!! */
 #square3_frame_image{
   position: absolute;
   width: auto;
-  height: 37vh;       
-  bottom: 425px;  
-  left: 1200px; 
+  height: 32vh;       
+  bottom: 500px;  
+  left: 1300px; 
 }
 
 #mannequin{
@@ -819,13 +835,12 @@ body {
   left: 380px;       
 }
 
-/* NANCY'S WALL PIC (delete this)!!!!! */
 #square4_frame_image{
   position: absolute;
   width: auto;
-  height: 37vh;       
-  bottom: 425px;  
-  left: 500px; 
+  height: 35vh;       
+  bottom: 550px;  
+  left: 650px; 
 }
 
 /* adding the blur effect*/
