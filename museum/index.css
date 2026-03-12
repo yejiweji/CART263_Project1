@@ -414,9 +414,9 @@ body {
 #square3_frame_image{
   position: absolute;
   width: auto;
-  height: 32vh;       
-  bottom: 500px;  
-  left: 1300px; 
+  height: 25vh;       
+  bottom: 550px;  
+  left: 1220px; 
 }
 
 #korean_store_image{
@@ -450,12 +450,12 @@ body {
 #qipao_mannequin, 
 #mannequin, 
 #mannequin_sit {
-  transition: filter 0.3s ease; /* Smooth transition */
+  transition: filter 0.3s ease;
 }
 
 #hanbok_mannequin:hover, 
-#qipao_mannequin:hover, {
-  filter: blur(10px); /* Adjust blur strength as needed */
+#qipao_mannequin:hover {
+  filter: blur(10px); 
 }
 /* Target all images that are placed inside frames */
 #square_frame_image, 
