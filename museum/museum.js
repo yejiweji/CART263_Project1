@@ -1,16 +1,20 @@
-// door hovering 
-// const doorClosed = document.getElementById('korean_door');
-// const doorOpen = document.getElementById('korean_door_open');
+document.addEventListener('DOMContentLoaded', () => {
+    const doorBox = document.getElementById('korean-door-box');
+    const closedDoor = document.getElementById('korean_door');
+    const openDoor = document.getElementById('korean_door_open');
+    const storeFront = document.getElementById('korean_store');
 
-// doorOpen.style.display = 'none'; // hide open door initially
+    if (doorBox) {
+        doorBox.addEventListener('click', () => {
+            // Hide the door images
+            closedDoor.style.display = 'none';
+            openDoor.style.display = 'none';
 
-// doorClosed.addEventListener('mouseenter', () => {
-//   doorClosed.style.display = 'none';
-//   doorOpen.style.display = 'block';
-// });
+            // Show the storefront
+            storeFront.style.display = 'block';
 
-// doorOpen.addEventListener('mouseleave', () => {
-//   doorOpen.style.display = 'none';
-//   doorClosed.style.display = 'block';
-// });
-
+            // Optional: Disable the hover cursor since the transition is done
+            doorBox.style.cursor = 'default';
+        });
+    }
+});

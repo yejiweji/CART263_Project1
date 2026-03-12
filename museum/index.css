@@ -684,7 +684,7 @@ body {
 .door-container {
   position: absolute;
   height: 80vh;       
-  bottom: 255px;      /* Matches your existing vertical position */
+  bottom: 255px;     
   cursor: pointer;
   z-index: 5;
 }
@@ -694,7 +694,16 @@ body {
   left: 75px;
   width: 20vw;
 }
-
+/* Update your korean_store rule */
+#korean_store {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: auto;
+  z-index: 10;
+  display: none; /* Add this line to hide it initially */
+}
 /* Positioning for the Chinese door */
 #chinese-door-box {
   left: 900px; 
