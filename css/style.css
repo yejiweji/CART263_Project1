@@ -69,6 +69,19 @@ button:hover {
     background: #bc191e;
 }
 
+#enterMuseumButton {
+    background: #e9cb44;
+    color: #100d29;    
+    font-weight: bold;
+    margin-top: 10px;
+    border: 2px solid #bc191e; 
+}
+
+#enterMuseumButton:hover {
+    background: #d4b83b; 
+    cursor: pointer;
+}
+
 /* Modal */
 .modal {
     display: none;
