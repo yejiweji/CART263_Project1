@@ -724,6 +724,14 @@ body {
   left: 540px;       
 }
 
+/* add blur squidgames image*/
+#circle2_frame_image{
+  position: absolute;
+  width: auto;
+  height: 37vh;       
+  bottom: 425px;  
+  left: 820px; 
+}
 #frame_square3{
   position: absolute;
   width: auto;
