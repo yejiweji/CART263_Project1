@@ -829,14 +829,19 @@ body {
 }
 
 /* adding the blur effect*/
-.mannequin {
-  /* ... existing styles ... */
-  transition: filter 0.3s ease; /* Makes the blur appear smoothly */
+/* Update these in your museum/index.css */
+#hanbok_mannequin, 
+#qipao_mannequin, 
+#mannequin, 
+#mannequin_sit {
+  transition: filter 0.3s ease; /* Smooth transition */
 }
 
-/* Apply blur on hover */
-.mannequin:hover {
-  filter: blur(8px); /* Adjust the pixels to make it more or less blurry */
+#hanbok_mannequin:hover, 
+#qipao_mannequin:hover, 
+#mannequin:hover, 
+#mannequin_sit:hover {
+  filter: blur(10px); /* Adjust blur strength as needed */
 }
 /* Target all images that are placed inside frames */
 #square_frame_image, 
