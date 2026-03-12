@@ -828,3 +828,31 @@ body {
   left: 500px; 
 }
 
+/* adding the blur effect*/
+.mannequin {
+  /* ... existing styles ... */
+  transition: filter 0.3s ease; /* Makes the blur appear smoothly */
+}
+
+/* Apply blur on hover */
+.mannequin:hover {
+  filter: blur(8px); /* Adjust the pixels to make it more or less blurry */
+}
+/* Target all images that are placed inside frames */
+#square_frame_image, 
+#circle_frame_image, 
+#square2_frame_image, 
+#circle2_frame_image, 
+#square3_frame_image, 
+#square4_frame_image {
+  transition: filter 0.3s ease;
+}
+
+#square_frame_image:hover, 
+#circle_frame_image:hover, 
+#square2_frame_image:hover, 
+#circle2_frame_image:hover, 
+#square3_frame_image:hover, 
+#square4_frame_image:hover {
+  filter: blur(10px);
+}
