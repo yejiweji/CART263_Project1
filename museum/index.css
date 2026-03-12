@@ -579,20 +579,23 @@ body {
 .title_mannequin_text{
   position: absolute;       /* allows you to place it anywhere over the wall */
   color: rgb(243, 146, 98);             /* text color */
-  font-family: 'Spartan', sans-serif; /* font style */
+  font-family: 'Protest Revolution', sans-serif; /* Google Font */
   font-size: 1.2vw;         /* font size (responsive to viewport width) */
   text-align: center;       /* center-align text */
-  background: rgba(204, 2, 2, 0.674); /* semi-transparent background */
+  background: rgba(114, 0, 0, 0.829); /* semi-transparent background */
   padding: 5px 10px;        /* space around the text */
   border-radius: 5px;       /* rounded corners */
   bottom: 700px;
   left: -440px;
+
+  border: 4px solid rgba(213, 189, 6, 0.983);   /* black rimmed border */
+  box-shadow: 5px 5px 15px rgba(106, 0, 0, 0.7); /* drop shadow */
 }
 
 .sale_mannequin_text{
   position: absolute;       /* allows you to place it anywhere over the wall */
   color: rgb(243, 146, 98);             /* text color */
-  font-family: 'Spartan', sans-serif; /* font style */
+  font-family: 'Protest Revolution', sans-serif; /* Google Font */
   font-size: 1.2vw;         /* font size (responsive to viewport width) */
   text-align: center;       /* center-align text */
   background: rgba(204, 2, 2, 0.674); /* semi-transparent background */
@@ -600,6 +603,9 @@ body {
   border-radius: 5px;       /* rounded corners */
   bottom: 700px;
   left: 560px;
+
+  border: 4px solid rgba(213, 189, 6, 0.983);   /* black rimmed border */
+  box-shadow: 5px 5px 15px rgba(66, 2, 2, 0.7); /* drop shadow */
 }
 
 #qipao_mannequin{
@@ -613,10 +619,34 @@ body {
 #hanbok_mannequin {
   position: absolute;
   width: auto;
-  height: 100vh;   
+  height: 105vh;   
   bottom: 89px;  
   left: 590px;      
 }
+
+.protest-revolution-regular {
+  font-family: "Protest Revolution", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.frame_text {
+  position: absolute;       /* allows you to place it anywhere over the wall */
+  color: rgba(255, 166, 125, 0.9);             /* text color */
+  font-family: 'Protest Revolution', sans-serif; /* Google Font */
+  font-size: 2vw;         /* font size (responsive to viewport width) */
+  text-align: left;       /* align text */
+  background: rgba(114, 0, 0, 0.829); /* semi-transparent background */
+  padding: 100px 8px;        /* space around the text */
+  border-radius: 3px;       /* rounded corners */
+  
+  bottom: 460px;
+  left: 1560px;
+
+  border: 4px solid rgba(213, 189, 6, 0.983);   /* black rimmed border */
+  box-shadow: 5px 5px 15px rgba(102, 0, 0, 0.429); /* drop shadow */
+}
+
 
 #frame_square{
   position: absolute;
@@ -626,12 +656,28 @@ body {
   left: -50px;       
 }
 
+#square_frame_image{
+  position: absolute;
+  width: 488px;
+  height: 374px;       
+  bottom: 517px;  
+  left: 209px; 
+}
+
 #frame_circle{
   position: absolute;
   width: auto;
   height: 60vh;       
   bottom: 340px;  
-  left: 1210px;       
+  left: 1210px; 
+}
+
+#circle_frame_image{
+  position: absolute;
+  width: auto;
+  height: 60vh;       
+  bottom: 340px;  
+  left: 1210px; 
 }
 
 #korean_door{
