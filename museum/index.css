@@ -671,13 +671,13 @@ body {
   bottom: 340px;  
   left: 1210px; 
 }
-
+/* add blur psy image*/
 #circle_frame_image{
   position: absolute;
   width: auto;
-  height: 60vh;       
-  bottom: 340px;  
-  left: 1210px; 
+  height: 37vh;       
+  bottom: 425px;  
+  left: 1491px; 
 }
 
 #korean_door{
