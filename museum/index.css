@@ -680,85 +680,58 @@ body {
   left: 1430px; 
 }
 
-/* Container to keep both doors in the same spot */
+/* Shared container styles */
 .door-container {
   position: absolute;
-  width: auto;
   height: 80vh;       
-  bottom: 255px;  
-  left: 105px;  
+  bottom: 255px;      /* Matches your existing vertical position */
   cursor: pointer;
+  z-index: 5;
 }
 
-/* Ensure images inside the container stack on top of each other */
-#korean_door, #korean_door_open {
+/* Positioning for the Korean door */
+#korean-door-box {
+  left: 75px;
+  width: 20vw;
+}
+
+/* Positioning for the Chinese door */
+#chinese-door-box {
+  left: 900px; 
+  width: 20vw;
+}
+
+/* Common image styles for all doors */
+#korean_door, #korean_door_open,
+#chinese_door, #chinese_door_open {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: auto;
-  transition: opacity 0.3s ease; /* Optional: smooth fade effect */
+  transition: opacity 0.3s ease-in-out;
 }
 
-/* Hide the open door by default */
-#korean_door_open {
+/* Hide the open versions by default */
+#korean_door_open, #chinese_door_open {
   opacity: 0;
-  pointer-events: none; /* Prevents the hidden image from blocking clicks */
+  pointer-events: none;
 }
 
-/* When hovering over the container, swap the visibility */
-.door-container:hover #korean_door {
+/* Hover logic for Korean door */
+#korean-door-box:hover #korean_door {
   opacity: 0;
 }
-
-.door-container:hover #korean_door_open {
+#korean-door-box:hover #korean_door_open {
   opacity: 1;
 }
 
-
-#korean_door{
-  position: absolute;
-  width: auto;
-  height: 80vh;       
-  bottom: 255px;  
-  left: 50px;  
-  /* display: none;      */
+/* Hover logic for Chinese door */
+#chinese-door-box:hover #chinese_door {
+  opacity: 0;
 }
-
-#korean_door_open{
-  position: absolute;
-  width: auto;
-  height: 80vh;       
-  bottom: 255px;  
-  left: 50px;     
-  /* display: none;   */
-}
-
-#korean_store{
-  position: absolute;
-  width: auto;
-  height: 80vh;       
-  bottom: 307px;  
-  left: 95px; 
-  display:none; /*turn off*/
-}
-
-#chinese_door{
-  position: absolute;
-  width: auto;
-  height: 80vh;       
-  bottom: 220px;  
-  left: 870px;  
-  /* display: none;      */
-}
-
-#chinese_door_open{
-  position: absolute;
-  width: auto;
-  height: 80vh;       
-  bottom: 220px;  
-  left: 870px;     
-  /* display: none;   */
+#chinese-door-box:hover #chinese_door_open {
+  opacity: 1;
 }
 
 
