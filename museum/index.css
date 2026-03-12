@@ -680,6 +680,42 @@ body {
   left: 1491px; 
 }
 
+/* Container to keep both doors in the same spot */
+.door-container {
+  position: absolute;
+  width: auto;
+  height: 80vh;       
+  bottom: 255px;  
+  left: 105px;  
+  cursor: pointer;
+}
+
+/* Ensure images inside the container stack on top of each other */
+#korean_door, #korean_door_open {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: auto;
+  transition: opacity 0.3s ease; /* Optional: smooth fade effect */
+}
+
+/* Hide the open door by default */
+#korean_door_open {
+  opacity: 0;
+  pointer-events: none; /* Prevents the hidden image from blocking clicks */
+}
+
+/* When hovering over the container, swap the visibility */
+.door-container:hover #korean_door {
+  opacity: 0;
+}
+
+.door-container:hover #korean_door_open {
+  opacity: 1;
+}
+
+
 #korean_door{
   position: absolute;
   width: auto;
